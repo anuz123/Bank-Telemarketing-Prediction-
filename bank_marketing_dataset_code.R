@@ -18,7 +18,6 @@ bank_classifier
 bank_predictions<- predict(bank_classifier,bank_test[-21])
 bank_predictions
 table(bank_predictions,bank_test$y)
-# this takes time
 agreement<- bank_predictions == bank_test$y
 table(agreement)
 prop.table(table(agreement))
@@ -31,7 +30,6 @@ bank_classifier
 bank_predictions<- predict(bank_classifier,bank_test[-21])
 bank_predictions
 table(bank_predictions,bank_test$y)
-# this takes time
 agreement<- letter_predictions == letters_test$letter
 table(agreement)
 prop.table(table(agreement))
